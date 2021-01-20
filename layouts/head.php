@@ -27,8 +27,8 @@
 					<li><a href="#tests">Pruebas Covid 19</a></li>
 					<li><a href="#other_services">Otros servicios</a></li>
 					<li><a href="#contact">Contáctanos</a></li>
-					<li><a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a></li>
-					<li><a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a></li>
+					<!-- <li><a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a></li>
+					<li><a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a></li> -->
 				</ul>
 			</nav>
 		</header>
