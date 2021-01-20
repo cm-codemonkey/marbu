@@ -17,7 +17,7 @@ class Configuration
 	 *
      * @var string $domain
      */
-	public static $domain = 'company.com';
+	public static $domain = 'marbu.one-consultores.com';
 
 	/**
      * Nombre del sitio web.
@@ -26,7 +26,7 @@ class Configuration
 	 *
      * @var string $web_page
      */
-	public static $web_page = 'Company';
+	public static $web_page = 'Marbu Laboratorio';
 
 	/**
      * Idioma por default
@@ -276,7 +276,7 @@ class Configuration
 	 *
      * @var integer $smtp_emailer
      */
-	public static $smtp_emailer = 'noreply@company.com';
+	public static $smtp_emailer = 'noreply@one-consultores.com';
 
 	/**
      * Correo electrónico de contacto.
@@ -285,5 +285,5 @@ class Configuration
 	 *
      * @var integer $smtp_contact
      */
-	public static $smtp_contact = 'contacto@company.com';
+	public static $smtp_contact = 'info@one-consultores.com';
 }
