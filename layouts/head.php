@@ -18,9 +18,30 @@
 	</head>
 	<body>
 		<header class="main_header">
-			<a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a>
-			<a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a>
+			<figure>
+				<img src="{$path.images}logotype.png">
+			</figure>
+			<nav>
+				<ul>
+					<li><a href="#home"><i class="fas fa-home"></i></a></li>
+					<li><a href="#tests">Pruebas Covid 19</a></li>
+					<li><a href="#other_services">Otros servicios</a></li>
+					<li><a href="#contact">Contáctanos</a></li>
+					<li><a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a></li>
+					<li><a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a></li>
+				</ul>
+			</nav>
 		</header>
-		<header class="mobile_header">
-
-		</header>
+		<!-- <header class="mobile_header">
+			<nav>
+				<ul>
+					<li><a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a></li>
+					<li><a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a></li>
+				</ul>
+				<ul>
+					<li><a href="#home">Inicio</a></li>
+					<li><a href="#tests">Pruebas</a></li>
+					<li><a href="#contact">Contáctanos</a></li>
+				</ul>
+			</nav>
+		</header> -->

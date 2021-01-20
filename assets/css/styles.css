@@ -1,7 +1,7 @@
 
 body, h1, h2, h3, h4, h5, h6, p, nav, ul, figure, a, button { margin: 0px; padding: 0px; }
-figure { line-height: 0px; }
-a, button { text-decoration: none; cursor: pointer; }
+figure { line-height: 0px !important; }
+a, button { text-decoration: none !important; cursor: pointer !important; }
 
 [data-ajax-loader] {
     top: 0px;
@@ -69,3 +69,372 @@ a, button { text-decoration: none; cursor: pointer; }
 }
 
 /*  */
+
+header.main_header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    transition: 800ms;
+    z-index: 99;
+}
+
+header.main_header.down {
+    height: 60px;
+    background-color: #6ab2e3;
+}
+
+header.main_header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header.main_header > figure {
+    width: auto;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 10px 20px;
+    box-sizing: border-box;
+}
+
+header.main_header > figure > img {
+    width: auto;
+    height: 100%;
+}
+
+header.main_header > nav,
+header.main_header > nav > ul {
+    width: auto;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+header.main_header > nav > ul > li,
+header.main_header > nav > ul > li > a {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #212121;
+}
+
+header.main_header.down > nav > ul > li,
+header.main_header.down > nav > ul > li > a {
+    color: #fff;
+}
+
+header.main_header > nav > ul > li {
+    margin-left: 20px;
+    list-style: none;
+}
+
+header.main_header > nav > ul > li > a > img {
+    width: auto;
+    height: 15px;
+}
+
+/*  */
+
+main.main_body h1,
+main.main_body h2,
+main.main_body h3,
+main.main_body h4,
+main.main_body h5,
+main.main_body h6 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+main.main_body h1,
+main.main_body h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+main.main_body h1 > span,
+main.main_body h2 > span {
+    color: #6ab2e3;
+}
+
+main.main_body h3,
+main.main_body h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+main.main_body h5,
+main.main_body h6 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main.main_body p,
+main.main_body a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #212121;
+}
+
+main.main_body a {
+    display: inline-block;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #6ab2e3;
+    color: #fff;
+}
+
+main.main_body div.row {
+    width: 100%;
+}
+
+/*  */
+
+main.main_body > section.home {
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main.main_body > section.home h1 {
+    text-align: left;
+}
+
+main.main_body > section.home p {
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+/*  */
+
+main.main_body > section.tests {
+    width: 100%;
+    padding: 100px 0px;
+    box-sizing: border-box;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main.main_body > section.tests > div.icons {
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: rgb(106, 178, 227, 0.4);
+}
+
+main.main_body > section.tests > div.icons h4 {
+    color: #fff;
+    font-weight: 600;
+}
+
+main.main_body > section.tests > div.icons img {
+    width: auto;
+    height: 100px;
+    margin-top: 20px;
+}
+
+main.main_body > section.tests > div.data {
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+main.main_body > section.tests > div.data h5 {
+    font-weight: 600;
+    text-align: left;
+}
+
+main.main_body > section.tests > div.data p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+main.main_body > section.tests > div.data p:last-child {
+    margin-bottom: 0px;
+}
+
+main.main_body > section.tests > figure,
+main.main_body > section.tests > figure > img {
+    width: 100%;
+}
+
+main.main_body > section.tests > figure {
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/*  */
+
+main.main_body > section.your_company {
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main.main_body > section.your_company h2 {
+    text-align: right;
+}
+
+/*  */
+
+main.main_body > section.other_services {
+    width: 100%;
+    padding: 100px 40px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main.main_body > section.other_services > div.circles {
+    width: 70%;
+    height: 4px;
+    position: relative;
+    margin: 40px 0px;
+    border-radius: 4px;
+    background-color: #212121;
+}
+
+main.main_body > section.other_services > div.circles > span {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -8px;
+    display: block;
+    border-radius: 50%;
+    background-color: #212121;
+}
+
+main.main_body > section.other_services > div.circles > span.first {
+    left: -10px;
+}
+
+main.main_body > section.other_services > div.circles > span.medium {
+    left: calc(50% - 10px);
+}
+
+main.main_body > section.other_services > div.circles > span.last {
+    right: -10px;
+}
+
+main.main_body > section.other_services figure {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+main.main_body > section.other_services figure > img {
+    width: auto;
+    height: 100%;
+}
+
+main.main_body > section.other_services figure > a {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    bottom: 70px;
+    left: 40px;
+    opacity: 0;
+    transition: 800ms;
+}
+
+main.main_body > section.other_services figure:hover > a {
+    opacity: 1;
+}
+
+main.main_body > section.other_services h4 {
+    margin: 40px 0px;
+}
+
+main.main_body > section.other_services ul {
+    width: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #212121;
+}
+
+/*  */
+
+main.main_body > form.contact {
+    width: 100%;
+}
+
+main.main_body > form.contact > a {
+    margin: 40px 0px;
+}
+
+main.main_body > form.contact > input,
+main.main_body > form.contact > select,
+main.main_body > form.contact > textarea,
+main.main_body > form.contact > button {
+    width: 100%;
+    max-width: 600px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 0px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #eee;
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+}
+
+main.main_body > form.contact > textarea {
+    height: 200px;
+}
+
+main.main_body > form.contact > button {
+    border: 1px solid #212121;
+    background-color: #fff;
+    color: #212121;
+}
+
+/*  */
+
+main.main_body > section.clients {
+    width: 100%;
+    padding: 100px 40px;
+    box-sizing: border-box;
+}
+
+main.main_body > section.clients figure {
+    width: 100%;
+    height: 200px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+main.main_body > section.clients figure.h > img {
+    width: 100%;
+}
+
+main.main_body > section.clients figure.v > img {
+    width: auto;
+    height: 100%;
+}
