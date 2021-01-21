@@ -151,34 +151,69 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
         <div class="row">
             <div class="col-12 col-lg-4 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-20">
-                    <img src="{$path.images}clients_mexico_planners.png">
+                    <img src="{$path.images}clients/majestic.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-4 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-20">
-                    <img src="{$path.images}clients_flordeliz.png">
+                    <img src="{$path.images}clients/royalresorts.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
+                    <img src="{$path.images}clients/urbis.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
+                    <img src="{$path.images}clients/westin.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
+                    <img src="{$path.images}clients/imperial_perlas.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
+                    <img src="{$path.images}clients/mexico_planners.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
+                    <img src="{$path.images}clients/flordeliz.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-4 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-20">
-                    <img src="{$path.images}clients_cancun_sailing.png">
+                    <img src="{$path.images}clients/cancun_sailing.png">
                 </figure>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-4 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-20">
-                    <img src="{$path.images}clients_cenacolo.png">
+                    <img src="{$path.images}clients/cenacolo.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-4 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-20">
-                    <img src="{$path.images}clients_mapla.png">
+                    <img src="{$path.images}clients/mapla.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-4 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-20">
-                    <img src="{$path.images}clients_sobmex.png">
+                    <img src="{$path.images}clients/sobmex.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
+                    <img src="{$path.images}clients/kolekaabal.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
+                    <img src="{$path.images}clients/icebar.png">
                 </figure>
             </div>
         </div>
