@@ -36,7 +36,7 @@ class Configuration
 	 *
      * @var string $lang_default
      */
-	public static $lang_default = 'es';
+	public static $lang_default = 'en';
 
 	/**
      * Reporte de errores.
@@ -285,5 +285,5 @@ class Configuration
 	 *
      * @var integer $smtp_contact
      */
-	public static $smtp_contact = 'info@one-consultores.com';
+	public static $smtp_contact = 'marbu@one-consultores.com';
 }

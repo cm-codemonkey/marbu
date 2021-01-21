@@ -26,7 +26,13 @@ class Index_controller extends Controller
 				if (empty($_POST['phone']))
 					array_push($errors, ['No deje el teléfono vacío']);
 
-				if (empty($_POST['message']))
+				if (empty($_POST['age']))
+					array_push($errors, ['No deje el mensaje vacío']);
+
+				if (empty($_POST['nationality']))
+					array_push($errors, ['No deje el mensaje vacío']);
+
+				if (empty($_POST['test']))
 					array_push($errors, ['No deje el mensaje vacío']);
 
 				if (empty($errors))
@@ -37,8 +43,8 @@ class Index_controller extends Controller
 					{
 						$mail->setFrom(Configuration::$smtp_emailer, Configuration::$web_page);
 						$mail->addAddress(Configuration::$smtp_contact, Configuration::$web_page);
-						$mail->Subject = 'Nuevo contacto';
-						$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Mensaje: ' . $_POST['message'];
+						$mail->Subject = 'Marbu | Nuevo contacto';
+						$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Edad: ' . $_POST['age'] . '<br>Nacionalidad: ' . $_POST['nationality'] . '<br>Prueba: ' . $_POST['test'] . '<br>Viaje a: ' . (!empty($_POST['travel']) ? $_POST['travel'] : 'Sin viaje');
 						$mail->send();
 					}
 					catch (Exception $e) {}

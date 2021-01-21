@@ -13,176 +13,171 @@ $this->dependencies->add(['other', '<script async defer src="https://maps.google
 ?>
 
 <main class="main_body">
-    <section id="home" class="home d-flex align-items-center" style="background-image: url('{$path.images}home_background.png');">
+    <section id="home" class="home d-flex align-items-center p-40" style="background-image: url('{$path.images}home_background.png');">
         <div class="row">
-            <div class="col-12 col-lg-6">
-                <h1>Regresa <span>a casa</span></h1>
-                <p>Más de 140 países del mundo solicitan una prueba de laboratorio Sars-cov-2 avalado por un laboratorista clínico, con al menos <strong>48 horas</strong> previas al viaje.</p>
-                <a href="#contact">¡Pide tu cita! o cotiza</a>
+            <div class="col-12 col-lg-6 p-0">
+                <h1 class="text-center text-md-left">{$lang.return_home}</h1>
+                <p class="m-t-20 m-b-20 text-justify">{$lang.more_countries}</p>
+                <a href="#contact">{$lang.quote_now}</a>
+                <a href="#tests" class="m-t-10 m-md-0">{$lang.other_covid_tests}</a>
             </div>
         </div>
     </section>
-    <section id="tests" class="tests d-flex align-items-center flex-column"  style="background-image: url('{$path.images}tests_background.png');">
-        <h2>¿Que prueba <span>me tengo que hacer?</span></h2>
-        <h3>Pruebas de detección de Covid 19</h3>
-        <div class="icons">
-            <div class="row">
-                <div class="col-12 col-lg-4 d-flex align-items-center flex-column">
-                    <h4>PCR</h4>
+    <section id="tests" class="tests d-flex align-items-center flex-column p-40" style="background-image: url('{$path.images}tests_background.png');">
+        <h2>{$lang.whats_test}</h2>
+        <h3>{$lang.tests_covid_detected}</h3>
+        <div class="row">
+            <div class="col-12 col-lg-4 d-flex align-items-center flex-column m-t-40 m-b-0 m-b-md-40 p-tb-40">
+                <h4><strong>PCR</strong></h4>
+                <figure class="d-flex align-items-center justify-content-center m-tb-40">
                     <img src="{$path.images}tests_icon_pcr.png">
-                </div>
-                <div class="col-12 col-lg-4 d-flex align-items-center flex-column">
-                    <h4>Antigeno</h4>
+                </figure>
+                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <h5><strong>{$lang.demo}:</strong></h5>
+                <p class="m-b-20">{$lang.nasopharyngeal}</p>
+                <h5><strong>{$lang.along}:</strong></h5>
+                <p class="m-b-20">{$lang.all_period}</p>
+                <h5><strong>{$lang.results}:</strong></h5>
+                <p class="m-b-20">{$lang.exist_infection}</p>
+                <h5><strong>{$lang.time}:</strong></h5>
+                <p>{$lang.aprox_12}</p>
+            </div>
+            <div class="col-12 col-lg-4 d-flex align-items-center flex-column m-t-40 m-b-0 m-b-md-40 p-tb-40">
+                <h4><strong>{$lang.antigen}</strong></h4>
+                <figure class="d-flex align-items-center justify-content-center m-tb-40">
                     <img src="{$path.images}tests_icon_antigeno.png">
-                </div>
-                <div class="col-12 col-lg-4 d-flex align-items-center flex-column">
-                    <h4>Serología</h4>
+                </figure>
+                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <h5><strong>{$lang.demo}:</strong></h5>
+                <p class="m-b-20">{$lang.nasopharyngeal}</p>
+                <h5><strong>{$lang.along}:</strong></h5>
+                <p class="m-b-20">{$lang.0_7_days}</p>
+                <h5><strong>{$lang.results}:</strong></h5>
+                <p class="m-b-20">{$lang.exist_infection}</p>
+                <h5><strong>{$lang.time}:</strong></h5>
+                <p>{$lang.15_20_minutes}</p>
+            </div>
+            <div class="col-12 col-lg-4 d-flex align-items-center flex-column m-tb-40 p-tb-40">
+                <h4><strong>{$lang.serology}</strong></h4>
+                <figure class="d-flex align-items-center justify-content-center m-tb-40">
                     <img src="{$path.images}tests_icon_serologia.png">
-                </div>
+                </figure>
+                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <h5><strong>{$lang.demo}:</strong></h5>
+                <p class="m-b-20">{$lang.bloodline}</p>
+                <h5><strong>{$lang.along}:</strong></h5>
+                <p class="m-b-20">{$lang.0_7_days}</p>
+                <h5><strong>{$lang.results}:</strong></h5>
+                <p class="m-b-20">{$lang.anticorps_detected}</p>
+                <h5><strong>{$lang.time}:</strong></h5>
+                <p>{$lang.15_20_minutes}</p>
             </div>
         </div>
-        <div class="data">
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <h5>Muestra:</h5>
-                    <p>Nasofaríngeo</p>
-                    <h5>Durante:</h5>
-                    <p>Todo el periodo de infección</p>
-                    <h5>Resultados:</h5>
-                    <p>Existe infección actualmente</p>
-                    <h5>Tiempo:</h5>
-                    <p>Aproximadamente 12 horas</p>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <h5>Muestra:</h5>
-                    <p>Nasofaríngeo</p>
-                    <h5>Durante:</h5>
-                    <p>0-7 días</p>
-                    <h5>Resultados:</h5>
-                    <p>Existe infección actualmente</p>
-                    <h5>Tiempo:</h5>
-                    <p>15-20 minutos</p>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <h5>Muestra:</h5>
-                    <p>Sanguinea</p>
-                    <h5>Durante:</h5>
-                    <p>0-7 días</p>
-                    <h5>Resultados:</h5>
-                    <p>Detección cultivada de anticuerpos IgM-IgG</p>
-                    <h5>Tiempo:</h5>
-                    <p>15-20 min</p>
-                </div>
-            </div>
-        </div>
-        <h2>¿Cuando hacerse <span>la prueba?</span></h2>
+        <h2 class="m-b-40">{$lang.how_do_test}</h2>
         <figure>
             <img src="{$path.images}tests_graph.png">
         </figure>
     </section>
-    <section class="your_company" style="background-image: url('{$path.images}your_company_background.png');">
-        <h2>Una <strong>empresa saludable</strong> <br> <span>es  una empresa <br> <strong>productiva</strong></span></h2>
+    <section class="your_company p-40" style="background-image: url('{$path.images}your_company_background.png');">
+        <h2 class="text-center text-md-right">{$lang.a_healthy_company}</h2>
     </section>
-    <section id="other_services" class="other_services d-flex align-items-center flex-column" style="background-image: url('{$path.images}other_services_background.png');">
-        <h2>Tus empleados <span>son tu empresa</span></h2>
-        <h3>Otros servicios</h3>
-        <div class="circles">
+    <section id="other_services" class="other_services d-flex align-items-center flex-column p-40" style="background-image: url('{$path.images}other_services_background.png');">
+        <h2>{$lang.your_employees}</h2>
+        <h3>{$lang.other_services}</h3>
+        <div class="circles m-tb-40">
             <span class="first"></span>
             <span class="medium"></span>
             <span class="last"></span>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-4 d-flex align-items-center flex-column">
-                <figure class="d-flex align-items-center flex-column">
+            <div class="col-12 col-lg-4 d-flex align-items-center flex-column m-b-40 m-b-md-0">
+                <figure class="d-flex align-items-center justify-content-center">
                     <img src="{$path.images}other_services_alcoholimetro.png">
-                    <a href="#contact" class="d-flex align-items-center">¡Pide tu cita! o cotiza</a>
                 </figure>
-                <h4>Alcoholimetro</h4>
-                <ul>
-                    <li>Inicio de la jornada</li>
-                    <li>Aleatoriamente</li>
-                    <li>Sospecha razonable</li>
-                    <li>Después de un accidente</li>
-                    <li>Finalizar la jornada</li>
-                </ul>
+                <h4 class="m-tb-40"><strong>{$lang.breathalyser}</strong></h4>
+                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <p>{$lang.start_journal}</p>
+                <p>{$lang.random}</p>
+                <p>{$lang.reasonable_suspicion}</p>
+                <p>{$lang.after_accident}</p>
+                <p>{$lang.end_journal}</p>
             </div>
-            <div class="col-12 col-lg-4 d-flex align-items-center flex-column">
-                <figure class="d-flex align-items-center flex-column">
+            <div class="col-12 col-lg-4 d-flex align-items-center flex-column m-b-40 m-b-md-0">
+                <figure class="d-flex align-items-center justify-content-center">
                     <img src="{$path.images}other_services_toxicologica.png">
-                    <a href="#contact" class="d-flex align-items-center">¡Pide tu cita! o cotiza</a>
                 </figure>
-                <h4>Toxicológica</h4>
-                <ul>
-                    <li>3 elementos</li>
-                    <li>5 elementos</li>
-                </ul>
+                <h4 class="m-tb-40"><strong>{$lang.toxicological}</strong></h4>
+                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <p>3 {$lang.elements}</p>
+                <p>5 {$lang.elements}</p>
             </div>
             <div class="col-12 col-lg-4 d-flex align-items-center flex-column">
-                <figure class="d-flex align-items-center flex-column">
+                <figure class="d-flex align-items-center justify-content-center">
                     <img src="{$path.images}other_services_poligrafo.png">
-                    <a href="#contact" class="d-flex align-items-center">¡Pide tu cita! o cotiza</a>
                 </figure>
-                <h4>Polígrafo</h4>
-                <ul>
-                    <li>Pre-empleado</li>
-                    <li>Periódico</li>
-                    <li>Especifico</li>
-                </ul>
+                <h4 class="m-tb-40"><strong>{$lang.polygraph}</strong></h4>
+                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <p>{$lang.pre_employee}</p>
+                <p>{$lang.periodic}</p>
+                <p>{$lang.specific}</p>
             </div>
         </div>
     </section>
-    <form id="contact" class="contact d-flex align-items-center flex-column">
-        <h2>Bienvenidos <span>a nuestro laboratorio</span></h2>
-        <a href="tel:+529984403302">998 440 3302 ¡Llámanos!</a>
-        <input type="text" name="name" placeholder="Nombre completo">
-        <input type="text" name="phone" placeholder="Teléfono">
-        <input type="email" name="email" placeholder="Correo electrónico">
-        <input type="number" name="age" placeholder="Edad">
-        <input type="text" name="nationality" placeholder="Nacionalidad">
-        <select name="test">
-            <option value="">¿Que prueba te deseas realizar?</option>
+    <form id="contact" name="contact" class="contact d-flex align-items-center flex-column p-40">
+        <h2>{$lang.how_can_we_help_you}</h2>
+        <a href="tel:+529984403302" class="call d-flex align-items-center justify-content-center m-t-40 m-b-10"><strong>{$lang.call_us}</strong> <i class="fas fa-headset m-l-20"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=+529984403302" class="whatsapp d-flex align-items-center justify-content-center m-b-40"><strong>{$lang.send_us_whatsapp}</strong> <i class="fab fa-whatsapp m-l-20"></i></a>
+        <p class="m-b-20">{$lang.or}</p>
+        <p class="m-b-20">{$lang.we_contact_you}</p>
+        <input type="text" name="name" placeholder="{$lang.complete_name}" class="m-b-10 p-lr-20">
+        <input type="email" name="email" placeholder="{$lang.email}" class="m-b-10 p-lr-20">
+        <input type="text" name="phone" placeholder="{$lang.phone}" class="m-b-10 p-lr-20">
+        <input type="number" name="age" placeholder="{$lang.age}" class="m-b-10 p-lr-20">
+        <input type="text" name="nationality" placeholder="{$lang.nationality}" class="m-b-10 p-lr-20">
+        <select name="test" class="m-b-10 p-lr-20">
+            <option value="">{$lang.what_test}</option>
             <option value="Covid PCR">Covid PCR</option>
-            <option value="Covid Antigeno rápida">Covid Antígeno (Prueba rápdia)</option>
-            <option value="Covid Serologia rápida">Covid Serología (Pruaba rápida)</option>
-            <option value="Alcoholimetro">Alcoholimetro</option>
-            <option value="Toxicológica">Toxicológica</option>
-            <option value="Polígrafo">Polígrafo</option>
+            <option value="Covid Antigeno rápida">Covid {$lang.antigen} ({$lang.fast_test})</option>
+            <option value="Covid Serologia rápida">Covid {$lang.serology} ({$lang.fast_test})</option>
+            <option value="Alcoholimetro">{$lang.breathalyser}</option>
+            <option value="Toxicológica">{$lang.toxicological}</option>
+            <option value="Polígrafo">{$lang.polygraph}</option>
         </select>
-        <input type="text" name="travel" placeholder="¿A donde viajas?">
-        <button type="submit">Enviar</button>
+        <input type="text" name="travel" placeholder="{$lang.where_travel}" class="m-b-10 p-lr-20">
+        <button type="submit"><strong>{$lang.send}</strong></button>
     </form>
-    <section class="clients">
-        <h2>Hemos <strong>trabajado con</strong></h2>
+    <section class="clients p-40">
+        <h2 class="m-b-40">{$lang.worked_with}</h2>
         <div class="row">
-            <div class="col-12 col-lg-4">
-                <figure class="h d-flex align-items-center flex-column">
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
                     <img src="{$path.images}clients_mexico_planners.png">
                 </figure>
             </div>
-            <div class="col-12 col-lg-4">
-                <figure class="h d-flex align-items-center flex-column">
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
                     <img src="{$path.images}clients_flordeliz.png">
                 </figure>
             </div>
-            <div class="col-12 col-lg-4">
-                <figure class="v d-flex align-items-center flex-column">
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="v d-flex align-items-center justify-content-center p-20">
                     <img src="{$path.images}clients_cancun_sailing.png">
                 </figure>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-4">
-                <figure class="h d-flex align-items-center flex-column">
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-20">
                     <img src="{$path.images}clients_cenacolo.png">
                 </figure>
             </div>
-            <div class="col-12 col-lg-4">
-                <figure class="v d-flex align-items-center flex-column">
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="v d-flex align-items-center justify-content-center p-20">
                     <img src="{$path.images}clients_mapla.png">
                 </figure>
             </div>
-            <div class="col-12 col-lg-4">
-                <figure class="v d-flex align-items-center flex-column">
+            <div class="col-12 col-lg-4 m-0 p-0">
+                <figure class="v d-flex align-items-center justify-content-center p-20">
                     <img src="{$path.images}clients_sobmex.png">
                 </figure>
             </div>

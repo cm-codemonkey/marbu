@@ -74,7 +74,7 @@ header.main_header {
     width: 100%;
     height: 100px;
     position: fixed;
-    transition: 800ms;
+    transition: 400ms;
     z-index: 99;
 }
 
@@ -96,8 +96,12 @@ header.main_header > figure {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0px 10px 20px;
+    padding: 20px 0px 20px 40px;
     box-sizing: border-box;
+}
+
+header.main_header.down > figure {
+    padding: 10px 0px 10px 40px;
 }
 
 header.main_header > figure > img {
@@ -126,11 +130,6 @@ header.main_header > nav > ul > li > a {
     justify-content: center;
     font-size: 16px;
     font-weight: 600;
-    color: #212121;
-}
-
-header.main_header.down > nav > ul > li,
-header.main_header.down > nav > ul > li > a {
     color: #fff;
 }
 
@@ -142,6 +141,97 @@ header.main_header > nav > ul > li {
 header.main_header > nav > ul > li > a > img {
     width: auto;
     height: 15px;
+}
+
+header.main_header > a[data-action="open_mobile_menu"] {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    header.main_header > nav {
+        display: none;
+    }
+
+    header.main_header > a[data-action="open_mobile_menu"] {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    header.main_header.down > a[data-action="open_mobile_menu"] {
+        width: auto;
+        height: 60px;
+        padding: 0px 40px;
+    }
+}
+
+/*  */
+
+header.mobile_header {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    header.mobile_header {
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        right: -300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #6ab2e3;
+        z-index: 99;
+        transition: 400ms;
+    }
+
+    header.mobile_header.open {
+        right: 0px;
+    }
+
+    header.mobile_header > a[data-action="close_mobile_menu"] {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    header.mobile_header > nav,
+    header.mobile_header > nav > ul,
+    header.mobile_header > nav > ul > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header.mobile_header > nav > ul > li > a {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        white-space: nowrap;
+        color: #fff;
+    }
+
+    header.mobile_header > nav > ul > li > a > strong {
+        margin-left: 5px;
+    }
 }
 
 /*  */
@@ -161,6 +251,14 @@ main.main_body h1,
 main.main_body h2 {
     font-size: 40px;
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+    main.main_body h1,
+    main.main_body h2 {
+        font-size: 30px;
+    }
 }
 
 main.main_body h1 > span,
@@ -184,6 +282,7 @@ main.main_body p,
 main.main_body a {
     font-size: 18px;
     font-weight: 400;
+    text-align: center;
     color: #212121;
 }
 
@@ -195,8 +294,17 @@ main.main_body a {
     color: #fff;
 }
 
+@media (max-width: 768px) {
+
+    main.main_body a {
+        display: block;
+        width: 100%;
+    }
+}
+
 main.main_body div.row {
     width: 100%;
+    margin: 0px;
 }
 
 /*  */
@@ -204,71 +312,55 @@ main.main_body div.row {
 main.main_body > section.home {
     width: 100%;
     height: 100vh;
-    padding: 40px;
-    box-sizing: border-box;
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-main.main_body > section.home h1 {
-    text-align: left;
+@media (max-width: 768px) {
+
+    main.main_body > section.home {
+        background-position: right;
+    }
 }
 
+main.main_body > section.home::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+main.main_body > section.home h1,
 main.main_body > section.home p {
-    margin: 20px 0px;
-    text-align: justify;
+    color: #fff;
 }
 
 /*  */
 
 main.main_body > section.tests {
     width: 100%;
-    padding: 100px 0px;
-    box-sizing: border-box;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-main.main_body > section.tests > div.icons {
-    width: 100%;
-    margin-top: 40px;
-    padding: 40px;
-    box-sizing: border-box;
+main.main_body > section.tests > div > div {
     background-color: rgb(106, 178, 227, 0.4);
 }
 
-main.main_body > section.tests > div.icons h4 {
-    color: #fff;
-    font-weight: 600;
-}
-
-main.main_body > section.tests > div.icons img {
-    width: auto;
-    height: 100px;
-    margin-top: 20px;
-}
-
-main.main_body > section.tests > div.data {
+main.main_body > section.tests > div > div > figure {
     width: 100%;
-    margin-top: 40px;
-    padding: 40px;
-    box-sizing: border-box;
+    height: 80px;
 }
 
-main.main_body > section.tests > div.data h5 {
-    font-weight: 600;
-    text-align: left;
-}
-
-main.main_body > section.tests > div.data p {
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-main.main_body > section.tests > div.data p:last-child {
-    margin-bottom: 0px;
+main.main_body > section.tests > div > div > figure > img {
+    width: auto;
+    height: 100%;
 }
 
 main.main_body > section.tests > figure,
@@ -276,33 +368,27 @@ main.main_body > section.tests > figure > img {
     width: 100%;
 }
 
-main.main_body > section.tests > figure {
-    padding: 40px;
-    box-sizing: border-box;
-}
-
 /*  */
 
 main.main_body > section.your_company {
     width: 100%;
     height: 100vh;
-    padding: 40px;
-    box-sizing: border-box;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-main.main_body > section.your_company h2 {
-    text-align: right;
+@media (max-width: 768px) {
+
+    main.main_body > section.your_company {
+        background-position: left;
+    }
 }
 
 /*  */
 
 main.main_body > section.other_services {
     width: 100%;
-    padding: 100px 40px;
-    box-sizing: border-box;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,9 +398,8 @@ main.main_body > section.other_services > div.circles {
     width: 70%;
     height: 4px;
     position: relative;
-    margin: 40px 0px;
     border-radius: 4px;
-    background-color: #212121;
+    background-color: #6ab2e3;
 }
 
 main.main_body > section.other_services > div.circles > span {
@@ -324,7 +409,7 @@ main.main_body > section.other_services > div.circles > span {
     top: -8px;
     display: block;
     border-radius: 50%;
-    background-color: #212121;
+    background-color: #6ab2e3;
 }
 
 main.main_body > section.other_services > div.circles > span.first {
@@ -342,7 +427,6 @@ main.main_body > section.other_services > div.circles > span.last {
 main.main_body > section.other_services figure {
     width: 100%;
     height: 200px;
-    position: relative;
 }
 
 main.main_body > section.other_services figure > img {
@@ -350,28 +434,8 @@ main.main_body > section.other_services figure > img {
     height: 100%;
 }
 
-main.main_body > section.other_services figure > a {
-    position: absolute;
-    top: 70px;
-    right: 40px;
-    bottom: 70px;
-    left: 40px;
-    opacity: 0;
-    transition: 800ms;
-}
-
-main.main_body > section.other_services figure:hover > a {
-    opacity: 1;
-}
-
-main.main_body > section.other_services h4 {
-    margin: 40px 0px;
-}
-
 main.main_body > section.other_services ul {
     width: 100%;
-    padding-left: 40px;
-    box-sizing: border-box;
     font-size: 18px;
     font-weight: 400px;
     color: #212121;
@@ -384,34 +448,34 @@ main.main_body > form.contact {
 }
 
 main.main_body > form.contact > a {
-    margin: 40px 0px;
+    border-radius: 40px;
+    background-color: #ffeb3b;
+}
+
+main.main_body > form.contact > a.call {
+    background-color: #ffeb3b;
+    color: #212121;
+}
+
+main.main_body > form.contact > a.whatsapp {
+    background-color: #009688;
+    color: #fff;
+}
+
+main.main_body > form.contact > a > i {
+    font-size: 40px;
 }
 
 main.main_body > form.contact > input,
 main.main_body > form.contact > select,
-main.main_body > form.contact > textarea,
 main.main_body > form.contact > button {
     width: 100%;
     max-width: 600px;
     height: 60px;
-    margin-bottom: 10px;
-    padding: 20px;
     border: 0px;
-    border-radius: 5px;
-    box-sizing: border-box;
     background-color: #eee;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    color: #212121;
-}
-
-main.main_body > form.contact > textarea {
-    height: 200px;
-}
-
-main.main_body > form.contact > button {
-    border: 1px solid #212121;
-    background-color: #fff;
     color: #212121;
 }
 
@@ -419,15 +483,19 @@ main.main_body > form.contact > button {
 
 main.main_body > section.clients {
     width: 100%;
-    padding: 100px 40px;
-    box-sizing: border-box;
 }
 
 main.main_body > section.clients figure {
     width: 100%;
     height: 200px;
-    padding: 40px;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+
+    main.main_body > section.clients figure {
+        height: auto;
+    }
 }
 
 main.main_body > section.clients figure.h > img {
@@ -437,4 +505,23 @@ main.main_body > section.clients figure.h > img {
 main.main_body > section.clients figure.v > img {
     width: auto;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+
+    main.main_body > section.clients figure.h > img,
+    main.main_body > section.clients figure.v > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*  */
+
+footer.main_footer {
+    width: 100%;
+}
+
+footer.main_footer > p > i {
+    color: #f44336;
 }
