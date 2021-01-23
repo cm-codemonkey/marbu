@@ -151,67 +151,77 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
         <div class="row">
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/majestic.png">
+                    <img src="https://one-consultores.com/assets/images/clients/majestic.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/royalresorts.png">
+                    <img src="https://one-consultores.com/assets/images/clients/royalresorts.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/URBIS.png">
+                    <img src="https://one-consultores.com/assets/images/clients/URBIS.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/westin.png">
+                    <img src="https://one-consultores.com/assets/images/clients/westin.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-3 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-40">
+                    <img src="https://one-consultores.com/assets/images/clients/belo.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/imperial_perlas.png">
+                    <img src="https://one-consultores.com/assets/images/clients/cancun_bay.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/mexico_planner.png">
+                    <img src="https://one-consultores.com/assets/images/clients/yellow.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/flordeliz.png">
-                </figure>
-            </div>
-            <div class="col-12 col-lg-3 m-0 p-0">
-                <figure class="v d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/cancun_sailing.png">
+                    <img src="https://one-consultores.com/assets/images/clients/mexico_planner.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/cenacolo.png">
+                    <img src="https://one-consultores.com/assets/images/clients/flordeliz.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/mapla.png">
-                </figure>
-            </div>
-            <div class="col-12 col-lg-3 m-0 p-0">
-                <figure class="v d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/sobmex.png">
+                    <img src="https://one-consultores.com/assets/images/clients/cancun_sailing.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/kolekaabal.png">
+                    <img src="https://one-consultores.com/assets/images/clients/cenacolo.png">
                 </figure>
             </div>
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-40">
-                    <img src="{$path.images}clients/icebar.png">
+                    <img src="https://one-consultores.com/assets/images/clients/mapla.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-3 m-0 p-0">
+                <figure class="v d-flex align-items-center justify-content-center p-40">
+                    <img src="https://one-consultores.com/assets/images/clients/sobmex.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-3 m-0 p-0">
+                <figure class="h d-flex align-items-center justify-content-center p-40">
+                    <img src="https://one-consultores.com/assets/images/clients/kolekaabal.png">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-3 m-0 p-0">
+                <figure class="v d-flex align-items-center justify-content-center p-40">
+                    <img src="https://one-consultores.com/assets/images/clients/icebar.png">
                 </figure>
             </div>
         </div>
