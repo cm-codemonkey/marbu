@@ -15,6 +15,17 @@
 		<link rel="stylesheet" href="https://cdn.codemonkey.com.mx/css/valkyrie.css?v=1.0" type="text/css" media="all" />
 		<link rel="stylesheet" href="{$path.css}styles.css?v=1.1" type="text/css" media="all" />
 		{$dependencies.css}
+
+		<!-- Recaptcha v3 -->
+		<script src="https://www.google.com/recaptcha/api.js?render=6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu"></script>
+		<script>
+		    grecaptcha.ready(function() {
+			    grecaptcha.execute('6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu', {action: 'submit'}).then(function(token) {
+				    var recaptcha_1 = document.getElementById('recaptcha_1');
+				    recaptcha_1.value = token;
+			    });
+			});
+		</script>
 	</head>
 	<body>
 		<header class="main_header">

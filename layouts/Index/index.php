@@ -144,6 +144,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
             <option value="Polígrafo">{$lang.polygraph}</option>
         </select>
         <input type="text" name="travel" placeholder="{$lang.where_travel}" class="m-b-10 p-lr-20">
+        <input type="hidden" name="recaptcha_1" id="recaptcha_1">
         <button type="submit"><strong>{$lang.send}</strong></button>
     </form>
     <section class="clients p-40">

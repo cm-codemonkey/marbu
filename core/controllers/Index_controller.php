@@ -37,21 +37,39 @@ class Index_controller extends Controller
 
 				if (empty($errors))
 				{
-					$mail = new Mailer(true);
+					$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+					$recaptcha_secret = '6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss';
+					$recaptcha_response = $_POST['recaptcha_1'];
+					$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+					$recaptcha = json_decode($recaptcha);
 
-					try
+					if ($recaptcha->success = true AND $recaptcha->score >= 0.7)
 					{
-						$mail->setFrom(Configuration::$smtp_emailer, Configuration::$web_page);
-						$mail->addAddress(Configuration::$smtp_contact, Configuration::$web_page);
-						$mail->Subject = 'Marbu | Nuevo contacto';
-						$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Edad: ' . $_POST['age'] . '<br>Nacionalidad: ' . $_POST['nationality'] . '<br>Prueba: ' . $_POST['test'] . '<br>Viaje a: ' . (!empty($_POST['travel']) ? $_POST['travel'] : 'Sin viaje');
-						$mail->send();
-					}
-					catch (Exception $e) {}
+						$mail = new Mailer(true);
 
-					echo json_encode([
-						'status' => 'success'
-					]);
+						try
+						{
+							$mail->setFrom(Configuration::$smtp_emailer, Configuration::$web_page);
+							$mail->addAddress(Configuration::$smtp_contact, Configuration::$web_page);
+							$mail->Subject = 'Marbu | Nuevo contacto';
+							$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Edad: ' . $_POST['age'] . '<br>Nacionalidad: ' . $_POST['nationality'] . '<br>Prueba: ' . $_POST['test'] . '<br>Viaje a: ' . (!empty($_POST['travel']) ? $_POST['travel'] : 'Sin viaje');
+							$mail->send();
+						}
+						catch (Exception $e) {}
+
+						echo json_encode([
+							'status' => 'success'
+						]);
+					}
+					else
+					{
+						echo json_encode([
+							'status' => 'error',
+							'errors' => [
+								['RECAPTCHA', 'RECAPTCHA ERROR']
+							]
+						]);
+					}
 				}
 				else
 				{
