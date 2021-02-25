@@ -229,7 +229,7 @@ class Configuration
 	 *
      * @var string $smtp_host
      */
-	public static $smtp_host = 'mail.codemonkey.com.mx';
+	public static $smtp_host = 'smtp.gmail.com';
 
 	/**
      * Usuario de la cuenta smtp.
@@ -239,7 +239,7 @@ class Configuration
 	 *
      * @var string $smtp_user
      */
-	public static $smtp_user = 'noreply@one-consultores.com';
+	public static $smtp_user = 'marbu@one-consultores.com';
 
 	/**
      * Contraseña de la cuenta smtp.
@@ -248,7 +248,7 @@ class Configuration
 	 *
      * @var string $smtp_pass
      */
-	public static $smtp_pass = '2#5igqR3';
+	public static $smtp_pass = '89kv#3Ha';
 
 	/**
      * Seguridad de la encriptacion para el envio de SMTP.
@@ -258,7 +258,7 @@ class Configuration
 	 *
      * @var string $smtp_secure
      */
-	public static $smtp_secure = 'ssl';
+	public static $smtp_secure = 'tls';
 
 	/**
      * Puerto de conexion al servidor SMTP.
@@ -267,7 +267,7 @@ class Configuration
 	 *
      * @var integer $smtp_port
      */
-	public static $smtp_port = 465;
+	public static $smtp_port = 587;
 
 	/**
      * Correo electrónico de emailing.
@@ -276,7 +276,7 @@ class Configuration
 	 *
      * @var integer $smtp_emailer
      */
-	public static $smtp_emailer = 'noreply@one-consultores.com';
+	public static $smtp_emailer = 'marbu@one-consultores.com';
 
 	/**
      * Correo electrónico de contacto.
