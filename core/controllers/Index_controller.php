@@ -48,7 +48,7 @@ class Index_controller extends Controller
 						{
 							$mail->setFrom(Configuration::$smtp_emailer, Configuration::$web_page);
 							$mail->addAddress(Configuration::$smtp_contact, Configuration::$web_page);
-							$mail->Subject = 'Marbu | Nuevo contacto';
+							$mail->Subject = 'Nuevo contacto desde marbu.oneconsultores.com';
 							$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Edad: ' . $_POST['age'] . '<br>Nacionalidad: ' . $_POST['nationality'] . '<br>Prueba: ' . $_POST['test'] . '<br>Viaje a: ' . (!empty($_POST['travel']) ? $_POST['travel'] : 'Sin viaje');
 							$mail->send();
 						}
