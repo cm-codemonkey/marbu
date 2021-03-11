@@ -38,6 +38,7 @@
 					<li><a href="#tests">{$lang.tests_covid}</a></li>
 					<li><a href="#other_services">{$lang.other_tests}</a></li>
 					<li><a href="#contact">{$lang.contact_us}</a></li>
+					<li><a href="/card">{$lang.card}</a></li>
 					<li><a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a></li>
 					<li><a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a></li>
 				</ul>
@@ -52,6 +53,7 @@
 					<li><a href="#tests">{$lang.tests_covid}</a></li>
 					<li><a href="#other_services">{$lang.other_tests}</a></li>
 					<li><a href="#contact">{$lang.contact_us}</a></li>
+					<li><a href="/card">{$lang.card}</a></li>
 					<li><a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a></li>
 					<li><a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a></li>
 				</ul>

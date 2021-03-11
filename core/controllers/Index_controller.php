@@ -86,4 +86,20 @@ class Index_controller extends Controller
 			echo $template;
 		}
 	}
+
+	public function card()
+	{
+		if (Format::exist_ajax_request() == true)
+		{
+
+		}
+		else
+		{
+			define('_title', Configuration::$web_page . ' | {$lang.card}');
+
+			$template = $this->view->render($this, 'card');
+
+			echo $template;
+		}
+	}
 }

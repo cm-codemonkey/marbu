@@ -12,6 +12,10 @@ class Urls_registered_vkye
             '/' => [
                 'controller' => 'Index',
                 'method' => 'index'
+            ],
+            '/card' => [
+                'controller' => 'Index',
+                'method' => 'card'
             ]
         ];
     }
