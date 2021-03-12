@@ -22,7 +22,7 @@ $this->dependencies->add(['other', '<script async defer src="https://maps.google
             <a href="mailto:marbu@one-consultores.com"><i class="fas fa-envelope"></i><span>Email</span></a>
         </div>
         <div class="buttons">
-            <a href="https://www.google.com/maps/@21.1487136,-86.8450465,21z" target="_blank"><i class="fas fa-map-marked-alt"></i><span>{$lang.location}</span></a>
+            <a href="https://www.google.com.mx/maps/dir//21.1487581,-86.8450274/@21.1490613,-86.8451551,18z/data=!4m2!4m1!3e0" target="_blank"><i class="fas fa-map-marked-alt"></i><span>{$lang.location}</span></a>
             <a href="https://marbu.one-consultores.com" target="_blank"><i class="fas fa-globe"></i><span>{$lang.website}</span></a>
             <a data-action="share" data-text="{$lang.share_card}"><i class="fas fa-share-alt"></i><span>{$lang.share}</span></a>
         </div>
