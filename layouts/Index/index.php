@@ -150,11 +150,11 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
     <section class="clients p-40">
         <h2 class="m-b-40">{$lang.worked_with}</h2>
         <div class="row">
-            <div class="col-12 col-lg-3 m-0 p-0">
+            <!-- <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-40">
                     <img src="https://one-consultores.com/assets/images/clients/moontravel.png">
                 </figure>
-            </div>
+            </div> -->
             <!-- <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-40">
                     <img src="https://one-consultores.com/assets/images/clients/majestic.png">
