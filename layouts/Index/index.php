@@ -200,11 +200,11 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                     <img src="https://one-consultores.com/assets/images/clients/yellow.png">
                 </figure>
             </div>
-            <div class="col-12 col-lg-3 m-0 p-0">
+            <!-- <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
                     <img src="https://one-consultores.com/assets/images/clients/mexico_planner.png">
                 </figure>
-            </div>
+            </div> -->
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
                     <img src="https://one-consultores.com/assets/images/clients/flordeliz.png">
