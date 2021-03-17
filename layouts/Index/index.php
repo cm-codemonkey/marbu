@@ -147,19 +147,9 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
         <input type="hidden" name="recaptcha_1" id="recaptcha_1">
         <button type="submit"><strong>{$lang.send}</strong></button>
     </form> -->
-    <section class="clients p-40">
+    <!-- <section class="clients p-40">
         <h2 class="m-b-40">{$lang.worked_with}</h2>
         <div class="row">
-            <!-- <div class="col-12 col-lg-3 m-0 p-0">
-                <figure class="v d-flex align-items-center justify-content-center p-40">
-                    <img src="https://one-consultores.com/assets/images/clients/moontravel.png">
-                </figure>
-            </div> -->
-            <!-- <div class="col-12 col-lg-3 m-0 p-0">
-                <figure class="v d-flex align-items-center justify-content-center p-40">
-                    <img src="https://one-consultores.com/assets/images/clients/majestic.png">
-                </figure>
-            </div> -->
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="v d-flex align-items-center justify-content-center p-40">
                     <img src="https://one-consultores.com/assets/images/clients/royalresorts.png">
@@ -180,11 +170,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                     <img src="https://one-consultores.com/assets/images/clients/excellence_collection.png">
                 </figure>
             </div>
-            <!-- <div class="col-12 col-lg-3 m-0 p-0">
-                <figure class="h d-flex align-items-center justify-content-center p-40">
-                    <img src="https://one-consultores.com/assets/images/clients/dos_playas.png">
-                </figure>
-            </div> -->
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
                     <img src="https://one-consultores.com/assets/images/clients/belo.png">
@@ -200,11 +185,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                     <img src="https://one-consultores.com/assets/images/clients/yellow.png">
                 </figure>
             </div>
-            <!-- <div class="col-12 col-lg-3 m-0 p-0">
-                <figure class="h d-flex align-items-center justify-content-center p-40">
-                    <img src="https://one-consultores.com/assets/images/clients/mexico_planner.png">
-                </figure>
-            </div> -->
             <div class="col-12 col-lg-3 m-0 p-0">
                 <figure class="h d-flex align-items-center justify-content-center p-40">
                     <img src="https://one-consultores.com/assets/images/clients/flordeliz.png">
@@ -241,5 +221,5 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                 </figure>
             </div>
         </div>
-    </section>
+    </section> -->
 </main>
