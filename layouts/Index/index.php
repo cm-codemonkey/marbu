@@ -18,8 +18,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
             <div class="col-12 col-lg-6 p-0">
                 <h1 class="text-center text-md-left">{$lang.return_home}</h1>
                 <p class="m-t-20 m-b-20 text-justify">{$lang.more_countries}</p>
-                <a href="#contact">{$lang.quote_now}</a>
-                <a href="#tests" class="m-t-10 m-md-0">{$lang.other_covid_tests}</a>
+                <!-- <a href="#contact">{$lang.quote_now}</a> -->
+                <!-- <a href="#tests" class="m-t-10 m-md-0">{$lang.other_covid_tests}</a> -->
             </div>
         </div>
     </section>
@@ -32,7 +32,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                 <figure class="d-flex align-items-center justify-content-center m-tb-40">
                     <img src="{$path.images}tests_icon_pcr.png">
                 </figure>
-                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <!-- <a href="#contact" class="m-b-40">{$lang.contact_us}</a> -->
                 <h5><strong>{$lang.demo}:</strong></h5>
                 <p class="m-b-20">{$lang.nasopharyngeal}</p>
                 <h5><strong>{$lang.along}:</strong></h5>
@@ -47,7 +47,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                 <figure class="d-flex align-items-center justify-content-center m-tb-40">
                     <img src="{$path.images}tests_icon_antigeno.png">
                 </figure>
-                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <!-- <a href="#contact" class="m-b-40">{$lang.contact_us}</a> -->
                 <h5><strong>{$lang.demo}:</strong></h5>
                 <p class="m-b-20">{$lang.nasopharyngeal}</p>
                 <h5><strong>{$lang.along}:</strong></h5>
@@ -62,7 +62,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                 <figure class="d-flex align-items-center justify-content-center m-tb-40">
                     <img src="{$path.images}tests_icon_serologia.png">
                 </figure>
-                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <!-- <a href="#contact" class="m-b-40">{$lang.contact_us}</a> -->
                 <h5><strong>{$lang.demo}:</strong></h5>
                 <p class="m-b-20">{$lang.bloodline}</p>
                 <h5><strong>{$lang.along}:</strong></h5>
@@ -95,7 +95,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                     <img src="{$path.images}other_services_alcoholimetro.png">
                 </figure>
                 <h4 class="m-tb-40"><strong>{$lang.breathalyser}</strong></h4>
-                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <!-- <a href="#contact" class="m-b-40">{$lang.contact_us}</a> -->
                 <p>{$lang.start_journal}</p>
                 <p>{$lang.random}</p>
                 <p>{$lang.reasonable_suspicion}</p>
@@ -107,7 +107,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                     <img src="{$path.images}other_services_toxicologica.png">
                 </figure>
                 <h4 class="m-tb-40"><strong>{$lang.toxicological}</strong></h4>
-                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <!-- <a href="#contact" class="m-b-40">{$lang.contact_us}</a> -->
                 <p>3 {$lang.elements}</p>
                 <p>5 {$lang.elements}</p>
             </div>
@@ -116,14 +116,14 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
                     <img src="{$path.images}other_services_poligrafo.png">
                 </figure>
                 <h4 class="m-tb-40"><strong>{$lang.polygraph}</strong></h4>
-                <a href="#contact" class="m-b-40">{$lang.contact_us}</a>
+                <!-- <a href="#contact" class="m-b-40">{$lang.contact_us}</a> -->
                 <p>{$lang.pre_employee}</p>
                 <p>{$lang.periodic}</p>
                 <p>{$lang.specific}</p>
             </div>
         </div>
     </section>
-    <form id="contact" name="contact" class="contact d-flex align-items-center flex-column p-40">
+    <!-- <form id="contact" name="contact" class="contact d-flex align-items-center flex-column p-40">
         <h2>{$lang.how_can_we_help_you}</h2>
         <a href="tel:+529984403302" class="call d-flex align-items-center justify-content-center m-t-40 m-b-10"><strong>{$lang.call_us}</strong> <i class="fas fa-headset m-l-20"></i></a>
         <a href="https://api.whatsapp.com/send?phone=+529984403302" class="whatsapp d-flex align-items-center justify-content-center m-b-40"><strong>{$lang.send_us_whatsapp}</strong> <i class="fab fa-whatsapp m-l-20"></i></a>
@@ -146,7 +146,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
         <input type="text" name="travel" placeholder="{$lang.where_travel}" class="m-b-10 p-lr-20">
         <input type="hidden" name="recaptcha_1" id="recaptcha_1">
         <button type="submit"><strong>{$lang.send}</strong></button>
-    </form>
+    </form> -->
     <section class="clients p-40">
         <h2 class="m-b-40">{$lang.worked_with}</h2>
         <div class="row">

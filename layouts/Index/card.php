@@ -16,7 +16,7 @@ $this->dependencies->add(['other', '<script async defer src="https://maps.google
     <main>
         <h1>Marbu Salud</h1>
         <p>{$lang.card_description}</p>
-        <div class="buttons">
+        <!-- <div class="buttons">
             <a href="https://api.whatsapp.com/send?phone=+529984403302"><i class="fab fa-whatsapp"></i><span>Whatsapp</span></a>
             <a href="tel:+529984403302"><i class="fas fa-phone-alt"></i><span>{$lang.call}</span></a>
             <a href="mailto:marbu@one-consultores.com"><i class="fas fa-envelope"></i><span>Email</span></a>
@@ -29,6 +29,6 @@ $this->dependencies->add(['other', '<script async defer src="https://maps.google
         <figure>
             <img src="{$path.images}qr.png">
         </figure>
-        <div id="map"></div>
+        <div id="map"></div> -->
     </main>
 </article>
