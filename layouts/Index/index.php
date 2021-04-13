@@ -222,4 +222,21 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0.0']);
             </div>
         </div>
     </section> -->
+    <section class="salud">
+        <figure>
+            <img src="https://one-consultores.com/assets/images/salud.png" alt="Secretaría de Salud">
+        </figure>
+        <figure>
+            <img src="https://one-consultores.com/assets/images/cofepris.png" alt="COFEPRIS">
+        </figure>
+        <figure>
+            <img src="https://one-consultores.com/assets/images/qroo.png" alt="Quintana Roo">
+        </figure>
+        <figure>
+            <img src="https://one-consultores.com/assets/images/oportunidades.png" alt="Más y mejores oportunidades">
+        </figure>
+        <figure>
+            <img src="https://one-consultores.com/assets/images/sesa.png" alt="SESA">
+        </figure>
+    </section>
 </main>
