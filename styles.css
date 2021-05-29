@@ -1,0 +1,113 @@
+
+@font-face {
+    font-family: 'GeosansLight-Oblique';
+    src: url("fonts/GeosansLight-Oblique.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeosansLight';
+    src: url("fonts/GeosansLight.ttf");
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+}
+
+body > figure {
+    width: auto;
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+}
+
+@media (max-width: 768px) {
+
+    body > figure {
+        width: 100%;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+body > figure > img {
+    width: auto;
+    height: 100%;
+}
+
+body > div {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body > div > h1 {
+    margin: 0px 0px 10px 0px;
+    font-family: 'GeosansLight';
+    font-size: 60px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    body > div > h1 {
+        font-size: 30px;
+    }
+}
+
+body > div > a {
+    margin: 0px 0px 10px 0px;
+    font-family: 'GeosansLight';
+    font-weight: 100;
+    text-decoration: none;
+    color: #fff;
+}
+
+body > div > a[data-tel] {
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+
+@media (max-width: 768px) {
+
+    body > div > a[data-tel] {
+        font-size: 20px;
+    }
+}
+
+body > div > a[data-mail] {
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 768px) {
+
+    body > div > a[data-mail] {
+        font-size: 18px;
+    }
+}
